@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predavanje 3</title>
+  </head>
+  <body>
+    <!--forma-->
+    <form action="#" method="get">
+      <!--text inputi-->
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+
+      <label for="placa">Odaberite zeljeni iznos place</label><br />
+      <input
+        type="range"
+        id="placa"
+        name="placa"
+        min="0"
+        max="100000"
+      /><br /><br />
+
+      <!--radio botuni-->
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML je najbolji</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <!--tablica-->
+    <table border="1" style="width: 100%; height: 700px">
+      <colgroup>
+        <col span="3" style="background-color: green" />
+      </colgroup>
+      <caption>
+        Stepenice
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="7">Naslovna celija <b>thead</b></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="6">1</td>
+          <td rowspan="5">1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td rowspan="4">1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td rowspan="3">1</td>
+          <td colspan="2">1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td rowspan="2">1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="7">Footer celija <b>thead</b></th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
