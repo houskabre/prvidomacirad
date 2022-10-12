@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marihuana</title>
+  </head>
+  <body>
+    <body style="background-color: green"> 
+   
+    <form
+      action="#"
+      method="get"
+      oninput="potroseniiznos.value=parseInt(koliko)*parseInt(trava)"
+    >
+      <label for="marihuana">Koju bi marihuanu pušili:</label>
+      <br />
+      <select name="marihuana" id="marihuana">
+        <optgroup label="Proizvođač: Coffe shop old Amsterdam">
+          <option value="Green crack">Green crack</option>
+          <option value="Grape Ape">Grape Ape</option>
+          <option value="Ewok">Ewok</option>
+        </optgroup>
+        <optgroup label="Proizvođač: Leafly">
+          <option value="Permafrost">Permafrost</option>
+          <option value="Amnesia+">Amnesia</option>
+          <option value="Herijuana">Herijuana</option>
+        </optgroup>
+      </select>
+      <br />
+      <br />
+
+      <label for="m">Upišite mjesto gdje biste voljeli pušiti:</label>
+      <br />
+      <input list="misto" name="misto" /> <br />
+      <datalist id="misto">
+        <option value="kod kuće">kuća</option>
+        <option value="na poslu">posao</option>
+        <option value="vani na zidiću">vanka</option>
+        <option value="u kafiću">kafić</option>
+      </datalist>
+      <br />
+      <label for="djelovanje"
+        >Opišite kako vam je nakon šta zapalite trubu:</label
+      >
+      <br />
+      <textarea id="djelovanje" name="djelovanje" row="10" cols="20">
+      </textarea>
+      <br />
+      <br />
+      <fieldset>
+        <legend>
+              Dodatni komentari i vaše želje legalizaciju marihuane u Hrvatskoj:
+        </legend>
+        <label for="djelovanje"
+          >Ako imate kakve savjete za nešto više slobodno napišite:</label
+        >
+        <br />
+        <textarea
+          name="djelovanje"
+          id="djelovanje"
+          cols="200"
+          rows="10"
+        ></textarea>
+      </fieldset>
+      <br />
+      <br />
+
+      <input type="submit" />
+      <br />
+      <hr />
+      <img
+        src="https://splitsko-dalmatinska-policija.gov.hr/userdocsimages//PU_SD/Slike/marihuana%2017%20kg%2002.10..jpg?width=750&height=500&mode=crop"
+        alt="marijuana"
+        width="500"
+      />
+      <br />
+      <label for="koliko">Koliko grama ili kg kupujete?</label>
+      <input type="number" id="koliko" min="1" max="1000" />
+      <label for="cijena marihuane">Cijena Trave:</label>
+      <input type="number" id="koliko" min="1" max="1000" />
+      <output name="koliko" for="trava"></output>
+      
+    </form>
+  </body>
+</html>
